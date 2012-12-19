@@ -70,7 +70,8 @@ add_action( 'widgets_init', create_function( '', 'register_widget("pu_google_bad
 	 * Add Facebook javascripts
 	 */
 	public function add_js(){
-		echo '<link href="https://plus.google.com/'.$this->google_profile_id.'" rel="'.$this->google_profile_type.'" /><script type="text/javascript">
+		echo '<link href="http://plus.google.com/'.$this->google_profile_id.'" rel="'.$this->google_profile_type.'" />';
+		echo '<script type="text/javascript">
 			window.___gcfg = {lang: \'en\'};
 			(function() 
 			{var po = document.createElement("script");
